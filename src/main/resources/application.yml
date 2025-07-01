@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/hybridwork
+    username: root
+    password:
+    jpa:
+      properties:
+        hibernate:
+          ddl-auto: update
+      dialect: org.hibernate.dialect.MySQLDialect
+      show.sql: true
+
+server:
+  port: 8020
+
